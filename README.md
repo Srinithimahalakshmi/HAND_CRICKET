@@ -1,5 +1,6 @@
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------COMPUTER VISION-Powered Advanced Hand Cricket Game 🎮🏏
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+COMPUTER VISION-Powered Advanced Hand Cricket Game 🎮🏏
+
 This project is an interactive hand cricket game powered by NLP and computer vision, allowing players to play cricket using hand gestures detected via a webcam. The game features strategy commands, power-ups, adaptive AI, multiplayer mode, customizable themes, score prediction, and save & resume functionality, providing a rich and immersive experience.
 
 📂 Project Structure
@@ -26,7 +27,6 @@ Hand_Cricket_Game/
 │
 ├── README.md                   # Project documentation
 └── requirements.txt            # Python dependencies
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 🎯 Features
 
 Hand Gesture Detection: Detects gestures like open hand, fist, and numbers to play cricket.

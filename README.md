@@ -1,129 +1,100 @@
-🏏 Hand Cricket Game (AI + Flask + OpenCV + Mediapipe)
-📌 Overview
-
-A Hand Cricket Game 🎮 powered by AI-based hand recognition, built using Flask, OpenCV, and Mediapipe.
-Play cricket using just your hand gestures ✋ via webcam — no keyboard required!
-The system tracks your moves in real-time, updates the score 🏏, plays sound effects 🔊, and announces whether you Win 🎉 or Lose ❌.
-
-✨ Features
-
-🤖 AI Hand Gesture Recognition (Mediapipe)
-
-⚡ Automatic Score Detection — no button clicks needed
-
-🔊 Sound Effects
-
-score.mp3 → When you score runs
-
-out.mp3 → When you get out
-
-win.mp3 → When you win the game
-
-🎥 Live Webcam Feed (Flask + OpenCV Streaming)
-
-🎨 Colorful & Interactive UI (HTML + CSS + JS)
-
-🏆 Game End Alerts → Declares winner or loser
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------COMPUTER VISION-Powered Advanced Hand Cricket Game 🎮🏏
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+This project is an interactive hand cricket game powered by NLP and computer vision, allowing players to play cricket using hand gestures detected via a webcam. The game features strategy commands, power-ups, adaptive AI, multiplayer mode, customizable themes, score prediction, and save & resume functionality, providing a rich and immersive experience.
 
 📂 Project Structure
-HAND_CRICKET/
+Hand_Cricket_Game/
 │
-├── app.py               # Flask backend
-├── hand_utils.py        # Hand recognition + cricket logic
-├── requirements.txt     # Dependencies
+├── backend/
+│   └── app.py                  # Flask application for game logic and AI integration
 │
-├── templates/
-│   └── index.html       # Main frontend page
+├── frontend/
+│   ├── index.html              # HTML interface for the game
+│   ├── style.css               # CSS styling
+│   └── script.js               # JavaScript for front-end interactivity
 │
-├── static/
-│   ├── scripts.js       # JavaScript logic
-│   └── style.css        # CSS styling
+├── sounds/
+│   ├── hit.wav                 # Sound effect for hitting
+│   ├── wicket.wav              # Sound effect for losing a wicket
+│   └── cheer.wav               # Crowd cheering sound
 │
-└── sounds/              # Sound effects
-    ├── out.mp3
-    ├── score.mp3
-    └── win.mp3
+├── models/
+│   └── hand_recognition_model.pkl # Pretrained hand gesture detection model
+│
+├── datasets/
+│   └── hand_images/            # Dataset used for training hand gestures
+│
+├── README.md                   # Project documentation
+└── requirements.txt            # Python dependencies
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+🎯 Features
 
-⚙️ Installation & Setup
-1️⃣ Clone the Repository
-git clone https://github.com/your-username/hand-cricket.git
-cd hand-cricket
+Hand Gesture Detection: Detects gestures like open hand, fist, and numbers to play cricket.
 
-2️⃣ Create Virtual Environment
-python -m venv venv
-# Activate:
-# Linux/Mac
-source venv/bin/activate
-# Windows
-venv\Scripts\activate
+NLP Commands: Players can input strategy commands using text or voice.
 
-3️⃣ Install Dependencies
+Score Prediction: Predicts possible scores based on AI and player strategy.
+
+Multiplayer Mode: Play with friends on the same system.
+
+Power-ups & Surprises: Random events to make gameplay dynamic.
+
+Customizable Themes: Change game appearance and sound effects.
+
+Save & Resume: Continue your game from where you left off.
+
+⚙️ Technology Stack
+
+Frontend: HTML, CSS, JavaScript
+
+Backend: Python, Flask
+
+Machine Learning: Hand gesture recognition using OpenCV & TensorFlow
+
+Audio Effects: WAV sound integration
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+🚀 How to Run
+
+Clone the repository:
+
+git clone https://github.com/Srinithimahalakshmi/Hand_Cricket_Game.git
+cd Hand_Cricket_Game
+
+
+Install dependencies:
+
 pip install -r requirements.txt
 
-4️⃣ Run the Application
-python app.py
 
-5️⃣ Open in Browser
+Run the Flask backend:
 
-👉 http://127.0.0.1:5000
+python backend/app.py
 
-🕹️ How to Play
 
-✋ Show your hand in front of the webcam.
+Open your browser and go to:
 
-☝️ 1 finger → Run = 1
+http://127.0.0.1:5000
 
-✌️ 2 fingers → Run = 2
 
-… up to 6 fingers
+Play the game using hand gestures and enjoy! 🎮🏏
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+📈 Results
 
-🤖 Computer randomly chooses a number.
+Real-time hand gesture recognition for scoring and wickets
 
-If both match → OUT ❌
+Smooth gameplay with interactive sounds
 
-Otherwise, your score increases ✅
+Adaptive AI challenges for single-player mode
 
-🏆 Game ends when:
+Multiplayer mode tested successfully with responsive score updates
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+📚 References
 
-You get OUT, or
+OpenCV Hand Gesture Recognition
 
-You reach the target (Win 🎉)
+TensorFlow & Keras Documentation
 
-📸 Screenshots
+Research on NLP in Gaming Strategy Commands
 
-📷 Add gameplay screenshots here once you capture them.
-
-🚀 Tech Stack
-
-Backend → Flask
-
-Frontend → HTML, CSS, JavaScript
-
-AI/ML → Mediapipe (Hand Tracking)
-
-Computer Vision → OpenCV
-
-Audio → HTML5 <audio> + JS
-
-🎯 Future Improvements
-
-👥 Multiplayer Mode
-
-📱 Mobile-Friendly UI
-
-🎚️ Difficulty Levels
-
-📊 Scoreboard History
-
-🙌 Acknowledgements
-
-🤝 Mediapipe
- → Hand Recognition
-
-🤝 OpenCV
- → Computer Vision
-
-🤝 Flask
- → Web Framework
-
-✨ Developed with ❤️ for learning, fun, and innovation.
+WAV sound integration tutorials for Python

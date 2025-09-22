@@ -1,0 +1,6 @@
+flask
+mediapipe==0.10.9
+opencv-python
+opencv-contrib-python
+numpy==2.2.6
+matplotlib

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hand Cricket Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>🏏 Hand Cricket Game</h1>
+    <div class="video-container">
+        <img src="{{ url_for('video_feed') }}" width="640" height="480">
+    </div>
+
+    <div class="scoreboard">
+        <h2>📊 Scores</h2>
+        <p>Player: <span id="player_score">0</span></p>
+        <p>Computer: <span id="computer_score">0</span></p>
+        <h3 id="status">Game in Progress...</h3>
+    </div>
+
+    <audio id="scoreSound" src="{{ url_for('static', filename='../sounds/score.mp3') }}"></audio>
+    <audio id="outSound" src="{{ url_for('static', filename='../sounds/out.mp3') }}"></audio>
+    <audio id="winSound" src="{{ url_for('static', filename='../sounds/win.mp3') }}"></audio>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>

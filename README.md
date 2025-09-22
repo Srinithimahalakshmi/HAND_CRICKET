@@ -1,29 +1,29 @@
 🏏 Hand Cricket Game (AI + Flask + OpenCV + Mediapipe)
 📌 Overview
 
-This project is a Hand Cricket Game 🎮 that combines AI-powered hand recognition with Flask and OpenCV.
-Play cricket with your webcam — no keyboard required! ✋
-The system detects hand gestures, updates the score 🏏, plays sound effects 🔊, and finally announces the result (Win 🎉 or Lose ❌).
+A Hand Cricket Game 🎮 powered by AI-based hand recognition, built using Flask, OpenCV, and Mediapipe.
+Play cricket using just your hand gestures ✋ via webcam — no keyboard required!
+The system tracks your moves in real-time, updates the score 🏏, plays sound effects 🔊, and announces whether you Win 🎉 or Lose ❌.
 
 ✨ Features
 
-✅ AI Hand Gesture Recognition (via Mediapipe)
+🤖 AI Hand Gesture Recognition (Mediapipe)
 
-✅ Automatic Score Detection (no manual button clicks)
+⚡ Automatic Score Detection — no button clicks needed
 
-✅ Sound Effects 🎵
+🔊 Sound Effects
 
-🔔 score.mp3 → When you score runs
+score.mp3 → When you score runs
 
-💥 out.mp3 → When you get out
+out.mp3 → When you get out
 
-🎉 win.mp3 → When you win the game
+win.mp3 → When you win the game
 
-✅ Real-time Webcam Feed (OpenCV + Flask Streaming)
+🎥 Live Webcam Feed (Flask + OpenCV Streaming)
 
-✅ Interactive & Colorful Frontend (HTML + CSS + JS)
+🎨 Colorful & Interactive UI (HTML + CSS + JS)
 
-✅ Game End Alerts → Displays winner or loser at the end
+🏆 Game End Alerts → Declares winner or loser
 
 📂 Project Structure
 HAND_CRICKET/
@@ -37,7 +37,7 @@ HAND_CRICKET/
 │
 ├── static/
 │   ├── scripts.js       # JavaScript logic
-│   └── style.css        # CSS for styling
+│   └── style.css        # CSS styling
 │
 └── sounds/              # Sound effects
     ├── out.mp3
@@ -45,36 +45,31 @@ HAND_CRICKET/
     └── win.mp3
 
 ⚙️ Installation & Setup
-
 1️⃣ Clone the Repository
-
 git clone https://github.com/your-username/hand-cricket.git
 cd hand-cricket
 
-
 2️⃣ Create Virtual Environment
-
 python -m venv venv
-source venv/bin/activate   # Linux/Mac
-venv\Scripts\activate      # Windows
-
+# Activate:
+# Linux/Mac
+source venv/bin/activate
+# Windows
+venv\Scripts\activate
 
 3️⃣ Install Dependencies
-
 pip install -r requirements.txt
 
-
 4️⃣ Run the Application
-
 python app.py
 
-
 5️⃣ Open in Browser
+
 👉 http://127.0.0.1:5000
 
 🕹️ How to Play
 
-🎥 Show your hand ✋ in front of the webcam.
+✋ Show your hand in front of the webcam.
 
 ☝️ 1 finger → Run = 1
 
@@ -82,39 +77,39 @@ python app.py
 
 … up to 6 fingers
 
-🤖 Computer will also choose a number.
+🤖 Computer randomly chooses a number.
 
-If both numbers match → OUT ❌
+If both match → OUT ❌
 
 Otherwise, your score increases ✅
 
-🎯 Game ends when:
+🏆 Game ends when:
 
-You get OUT ❌, OR
+You get OUT, or
 
-You win by reaching the target 🏆
+You reach the target (Win 🎉)
 
 📸 Screenshots
 
-📷 Add gameplay screenshots here (from static/ or taken while playing).
+📷 Add gameplay screenshots here once you capture them.
 
 🚀 Tech Stack
 
-🔹 Backend → Flask
+Backend → Flask
 
-🔹 Frontend → HTML, CSS, JavaScript
+Frontend → HTML, CSS, JavaScript
 
-🔹 AI/ML → Mediapipe (Hand Tracking)
+AI/ML → Mediapipe (Hand Tracking)
 
-🔹 Computer Vision → OpenCV
+Computer Vision → OpenCV
 
-🔹 Audio → HTML5 <audio> + JS
+Audio → HTML5 <audio> + JS
 
 🎯 Future Improvements
 
 👥 Multiplayer Mode
 
-📱 Mobile-friendly UI
+📱 Mobile-Friendly UI
 
 🎚️ Difficulty Levels
 
@@ -123,12 +118,12 @@ You win by reaching the target 🏆
 🙌 Acknowledgements
 
 🤝 Mediapipe
- → For hand recognition
+ → Hand Recognition
 
 🤝 OpenCV
- → For computer vision
+ → Computer Vision
 
 🤝 Flask
- → For backend framework
+ → Web Framework
 
-✨ Developed with ❤️ for fun and learning.
+✨ Developed with ❤️ for learning, fun, and innovation.
